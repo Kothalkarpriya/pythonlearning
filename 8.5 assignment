@@ -1,0 +1,16 @@
+fname = input("Enter file name: ")
+#Their is specified to take input file mbox-short.txt
+fh = open(fname)
+#opening fille
+count = 0
+for line in fh:
+    if not line.startswith('From'):#if line is not starts with From continue
+        continue
+    if line.startswith('From:'):#if line is starts with From continue
+        continue
+    else:#otherwise print the line
+        line=line.split()
+        line=line[1]
+        print(line)
+        count+=1
+print("There were", count, "lines in the file with From as the first word")
