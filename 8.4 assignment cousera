@@ -1,0 +1,12 @@
+fname = input("Enter file name: ")
+fh = open(fname)
+F = fh.read()
+F = F.rstrip()
+F = F.split()
+L = list()
+for a in F:
+    if a in L:
+        continue
+    else:
+        L.append(a)
+print(sorted(L))
