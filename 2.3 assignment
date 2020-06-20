@@ -1,0 +1,6 @@
+
+#program for gross pay
+hrs = input("Enter Hours:")
+rate=input("Enter rate:")
+pay=float(int(hrs)*float(rate))
+print("Pay:",pay)
