@@ -1,0 +1,11 @@
+import re
+sum=0
+file=open('actualdata.txt')
+for i in file:
+    x = re.findall('[0-9]+',i)
+    for y in x:
+        y=int(y)
+        sum = sum + y
+        
+print(sum)
+    
